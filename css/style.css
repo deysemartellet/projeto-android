@@ -1,0 +1,223 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fontes/BebasNeue.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor01: #c5ebd6;
+    --cor02: #83e1ad;
+    --cor03: #3ddc84;
+    --cor04: #2FA866;
+    --cor05: #1a5c37;
+    --cor06: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', 'cursive';
+    --fonte-android: 'Android', 'cursive';
+}
+
+* {
+    margin: 0px;
+    padding: opx;
+}
+
+body {
+    background-color: var(--cor01);
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    background-image: linear-gradient(#063d1eb8, #1a5c37e1, #063d1e);
+    margin: auto;
+    min-height: 140px;
+}
+
+header > h1 {
+    font-family: var(--fonte-destaque);
+    color: white;
+    font-size: 3em;
+    font-weight: normal;
+    text-align: center;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.466);
+    padding-top: 25px;
+}
+
+header > p {
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.607);
+    padding-top: 15px;
+    padding-bottom: 20px;
+    max-width: 500px;
+    margin: auto;
+}
+
+nav {
+    background-color: var(--cor06);
+    margin: auto;
+}
+
+nav#menu {
+    display: block;
+    padding: 5px auto 10px auto;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.466);
+}
+
+nav > ul {
+    margin-left: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+nav > ul > li {
+    display: inline-block;
+    list-style: none;
+    text-align: left;
+    font-family: var(--fonte-padrao);
+    font-size: 14px;
+    padding-right: 10px;    
+}
+
+li > a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px 5px 5px;
+    border-radius: 5px;
+}
+
+li > a:hover {
+    background-color: var(--cor02);
+    color: var(--cor06);
+    transition: 0.4s;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    font-weight: normal;
+    font-size: 0.9em;
+
+    min-width: 400px;
+    max-width: 800px;
+    margin: auto;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.832);
+    margin-bottom: 20px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+main p {
+    text-align: justify;
+    line-height: 2em;
+}
+
+main h1 {
+    color: var(--cor06);
+    font-family: var(--fonte-android);
+    padding-bottom: 5px;
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+main h2 {
+    font-family: var(--fonte-android);
+    color: var(--cor05);
+    font-weight: normal;
+    font-size: 1.3em;
+    padding: 30px auto 10px auto;
+    background-image: linear-gradient(to right, var(--cor02), transparent);
+}
+
+main strong {
+    color: var(--cor05);
+    font-weight: bold;
+    padding: 2px 5px;
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    width: 350px;
+    display: block;
+    margin: auto;
+}
+
+article > p {
+    text-indent: 30px;
+    padding: 20px 0px;
+}
+
+article > p > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor05);
+    background-color: #c5ebd6;
+}
+
+article > p > a:after {
+    content: '🔗'
+}
+
+article > p > a:hover {
+    text-decoration: underline;
+    color: var(--cor04)
+}
+
+.filme {
+    position: relative;
+    background-color: var(--cor05);
+    height: 0px;
+    margin: auto -20px 15px -20px;
+    padding-bottom: 59%;
+}
+
+.filme > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    border: 1px solid transparent;
+    background-color: var(--cor02);
+    border-radius: 15px 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.711);
+}
+
+aside > h3 {
+    background-color: var(--cor04);
+    padding: 10px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+aside > p {
+    text-indent: 30px;
+    padding: 10px;
+}
+
+aside > ul {
+    list-style-type: '\2714\0020\0020';
+    columns: 2;
+    list-style-position: inside;
+}
+
+footer {
+    background-color: var(--cor06);
+    color: white;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+}
