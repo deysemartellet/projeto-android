@@ -37,7 +37,8 @@ body {
 header {
     background-image: linear-gradient(#063d1eb8, #1a5c37e1, #063d1e);
     margin: auto;
-    min-height: 140px;
+    min-height: 150px;
+
 }
 
 header > h1 {
@@ -57,7 +58,7 @@ header > p {
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.607);
     padding-top: 15px;
     padding-bottom: 20px;
-    max-width: 500px;
+    max-width: 800px;
     margin: auto;
 }
 
@@ -217,7 +218,8 @@ aside > ul {
 footer {
     background-color: var(--cor06);
     color: white;
-    height: 50px;
+    height: 80px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 25px;
+    max-width: 800px;
 }
